@@ -1,19 +1,19 @@
 package net.ukr.andy777;
 
 /*
- 1. Создать абстрактный класс Shape в котором есть два абстрактных метода double getPerimetr()и double getArea().
+ 1. РЎРѕР·РґР°С‚СЊ Р°Р±СЃС‚СЂР°РєС‚РЅС‹Р№ РєР»Р°СЃСЃ Shape РІ РєРѕС‚РѕСЂРѕРј РµСЃС‚СЊ РґРІР° Р°Р±СЃС‚СЂР°РєС‚РЅС‹С… РјРµС‚РѕРґР° double getPerimetr()Рё double getArea().
  */
 
 public abstract class Shape {
-	private String color; // колір заливки фігури
-	private String lineColor; // колір периметра фігури
-	private String name; // назва фігури
+	private String color; // РєРѕР»С–СЂ Р·Р°Р»РёРІРєРё С„С–РіСѓСЂРё
+	private String lineColor; // РєРѕР»С–СЂ РїРµСЂРёРјРµС‚СЂР° С„С–РіСѓСЂРё
+	private String name; // РЅР°Р·РІР° С„С–РіСѓСЂРё
 
 	public abstract double getPerimetr();
 
 	public abstract double getArea();
 
-	/* кілька неабстрактних методів */
+	/* РєС–Р»СЊРєР° РЅРµР°Р±СЃС‚СЂР°РєС‚РЅРёС… РјРµС‚РѕРґС–РІ */
 	public String getName() {
 		return name;
 	}
@@ -38,7 +38,7 @@ public abstract class Shape {
 		this.lineColor = lineColor;
 	}
 
-	// метод для обрахунку довжини відрізку між точками
+	// РјРµС‚РѕРґ РґР»СЏ РѕР±СЂР°С…СѓРЅРєСѓ РґРѕРІР¶РёРЅРё РІС–РґСЂС–Р·РєСѓ РјС–Р¶ С‚РѕС‡РєР°РјРё
 	protected double distance(Point p1, Point p2) {
 		return Math.sqrt(Math.pow(p2.getX() - p1.getX(), 2)
 				+ Math.pow(p2.getY() - p1.getY(), 2));

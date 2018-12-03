@@ -1,7 +1,7 @@
 package net.ukr.andy777;
 
 /*
- 2. Создать клас Point, в котором есть два свойства double x и double y.
+ 2. РЎРѕР·РґР°С‚СЊ РєР»Р°СЃ Point, РІ РєРѕС‚РѕСЂРѕРј РµСЃС‚СЊ РґРІР° СЃРІРѕР№СЃС‚РІР° double x Рё double y.
  */
 
 public class Point {
@@ -33,7 +33,6 @@ public class Point {
 	public void setY(double y) {
 		this.y = y;
 	}
-
 
 	public String toString() {
 		return "point[" + "x=" + x + ", y=" + y + "]";

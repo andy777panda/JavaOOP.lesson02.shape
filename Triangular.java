@@ -1,11 +1,11 @@
 package net.ukr.andy777;
 
 /*
- 3. Создать классы, которые описывают как минимум три геометрические фигуры (они должны быть подклассами Shape), 
- при этом в качестве свойств должны содержать классы Point.
+ 3. РЎРѕР·РґР°С‚СЊ РєР»Р°СЃСЃС‹, РєРѕС‚РѕСЂС‹Рµ РѕРїРёСЃС‹РІР°СЋС‚ РєР°Рє РјРёРЅРёРјСѓРј С‚СЂРё РіРµРѕРјРµС‚СЂРёС‡РµСЃРєРёРµ С„РёРіСѓСЂС‹ (РѕРЅРё РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РїРѕРґРєР»Р°СЃСЃР°РјРё Shape), 
+ РїСЂРё СЌС‚РѕРј РІ РєР°С‡РµСЃС‚РІРµ СЃРІРѕР№СЃС‚РІ РґРѕР»Р¶РЅС‹ СЃРѕРґРµСЂР¶Р°С‚СЊ РєР»Р°СЃСЃС‹ Point.
  */
 
-// клас Трикутник
+// РєР»Р°СЃ РўСЂРёРєСѓС‚РЅРёРє
 public class Triangular extends Shape {
 	private String name;
 	private Point p1 = new Point();
@@ -13,7 +13,6 @@ public class Triangular extends Shape {
 	private Point p3 = new Point();
 
 	public Triangular() {
-		// TODO Auto-generated constructor stub
 		super();
 	}
 
@@ -33,13 +32,13 @@ public class Triangular extends Shape {
 		this.name = name;
 	}
 
-	// метод обрахунку периметру фігури (трикутника)
+	// РјРµС‚РѕРґ РѕР±СЂР°С…СѓРЅРєСѓ РїРµСЂРёРјРµС‚СЂСѓ С„С–РіСѓСЂРё (С‚СЂРёРєСѓС‚РЅРёРєР°)
 	@Override
 	public double getPerimetr() {
 		return distance(p1, p2) + distance(p2, p3) + distance(p3, p1);
 	}
 
-	// метод обрахунку площі фігури (трикутника)
+	// РјРµС‚РѕРґ РѕР±СЂР°С…СѓРЅРєСѓ РїР»РѕС‰С– С„С–РіСѓСЂРё (С‚СЂРёРєСѓС‚РЅРёРєР°)
 	@Override
 	public double getArea() {
 		double halfP = this.getPerimetr() / 2;
