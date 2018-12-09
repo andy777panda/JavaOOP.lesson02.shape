@@ -12,7 +12,6 @@ public class Circle extends Shape {
 	private Point p2 = new Point();
 
 	public Circle() {
-		// TODO Auto-generated constructor stub
 		super();
 	}
 
